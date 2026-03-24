@@ -30,7 +30,7 @@ export default function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="public/Logo.jpeg" alt="Jeeva Beauty Saloon" className="h-12 w-auto" />
+          <img src="./Logo.jpeg" alt="Jeeva Beauty Saloon" className="h-12 w-auto" />
         </Link>
         {/* Logo */}
         <Link to="/" className="flex flex-col leading-none">
