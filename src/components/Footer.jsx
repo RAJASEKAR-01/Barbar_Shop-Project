@@ -49,15 +49,15 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex gap-3 text-sm text-cream/50">
                 <MapPin size={14} className="text-gold mt-0.5 shrink-0" />
-                <span>123, Nehru Street,<br />Tiruppur – 641 601,<br />Tamil Nadu</span>
+                <span>Anupparpalayam Bus stop back Side,<br />Tiruppur – 641 652,<br />Tamil Nadu</span>
               </li>
               <li className="flex gap-3 text-sm text-cream/50">
                 <Phone size={14} className="text-gold mt-0.5 shrink-0" />
-                <span>+91 98765 43210</span>
+                <span>+91 7904616471</span>
               </li>
               <li className="flex gap-3 text-sm text-cream/50">
                 <Clock size={14} className="text-gold mt-0.5 shrink-0" />
-                <span>Mon–Sat: 9am – 8pm<br />Sun: Closed</span>
+                <span>Mon–Sun: 8am – 8pm<br /></span>
               </li>
             </ul>
           </div>

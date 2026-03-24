@@ -99,7 +99,7 @@ export default function Booking() {
             </div>
           </div>
           <a
-            href={`https://wa.me/919876543210?text=Hi! I just booked appointment%23${confirmed.id.toString().slice(-6)} for ${confirmed.date} at ${confirmed.time}.`}
+            href={`https://wa.me/917904616471?text=Hi! I just booked appointment%23${confirmed.id.toString().slice(-6)} for ${confirmed.date} at ${confirmed.time}.`}
             target="_blank" rel="noopener noreferrer"
             className="w-full block bg-[#25D366] text-white text-xs tracking-[2px] uppercase font-semibold py-4 mb-3 hover:bg-[#20bb5a] transition-colors"
           >

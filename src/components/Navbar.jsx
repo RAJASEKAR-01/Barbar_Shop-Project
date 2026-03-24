@@ -29,21 +29,13 @@ export default function Navbar() {
       scrolled ? 'bg-black/95 backdrop-blur-md shadow-lg shadow-black/50' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo — drop your logo.png into the public/ folder to activate */}
-        <Link to="/" className="flex items-center gap-3">
-          <img
-            src="/logo.png"
-            alt="Jeeva Beauty Saloon"
-            className="h-12 w-auto object-contain"
-            onError={e => {
-              e.currentTarget.style.display = 'none'
-              document.getElementById('nav-text-logo').style.display = 'flex'
-            }}
-          />
-          <span id="nav-text-logo" className="flex-col leading-none" style={{ display: 'none' }}>
-            <span className="font-bebas text-2xl tracking-[4px] text-gold">JEEVA</span>
-            <span className="font-bebas text-sm tracking-[6px] text-cream/60">BEAUTY SALOON</span>
-          </span>
+        <Link to="/" className="flex items-center">
+          <img src="./Logo.jpeg" alt="Jeeva Beauty Saloon" className="h-12 w-auto" />
+        </Link>
+        {/* Logo */}
+        <Link to="/" className="flex flex-col leading-none">
+          <span className="font-bebas text-2xl tracking-[4px] text-gold">JEEVA</span>
+          <span className="font-bebas text-sm tracking-[6px] text-cream/60">BEAUTY SALOON</span>
         </Link>
 
         {/* Desktop links */}

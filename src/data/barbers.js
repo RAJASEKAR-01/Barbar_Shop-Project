@@ -16,7 +16,7 @@ export const barbers = [
     experience: '8 Years',
     speciality: 'Beard Sculpt & Shave',
     avatar: 'MR',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80',
+    image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=500&q=80',
     available: true,
   },
 ]
