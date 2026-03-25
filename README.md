@@ -8,7 +8,7 @@
 ![Vercel](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)
 
-**🌐 Live Demo:** [your-vercel-url.vercel.app](http://jeevabeautysaloon.vercel.app/)  
+**🌐 Live Demo:** [jeevabeautysaloon.vercel.app](https://jeevabeautysaloon.vercel.app)  
 **📍 Built for:** Jeeva Beauty Saloon, Tiruppur, Tamil Nadu, India 🇮🇳
 
 ---
@@ -17,7 +17,8 @@
 
 > *(Add your screenshots here — Home page, Booking page, Admin Dashboard)*
 
----
+---<img width="1915" height="907" alt="Screenshot 2026-03-24 202117" src="https://github.com/user-attachments/assets/699a1bb1-8815-47f9-8dca-8286882c4680" />
+
 
 ## 📖 About The Project
 
@@ -79,3 +80,146 @@ This is a **complete business web application** built for a real barbershop. It 
 ---
 
 ## 📁 Project Structure
+```
+jeeva-beauty-saloon/
+├── public/
+│   ├── Logo.jpeg              ← Shop logo
+│   └── scissors.svg           ← Favicon fallback
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx         ← Sticky nav, dark mode toggle, cart badge
+│   │   ├── Footer.jsx         ← Links, contact info, social icons
+│   │   ├── ServiceCard.jsx    ← Clickable card with add-to-cart
+│   │   └── WhatsAppButton.jsx ← Fixed floating WhatsApp button
+│   ├── context/
+│   │   └── AppContext.jsx     ← Global: cart, bookings, dark mode
+│   ├── data/
+│   │   ├── services.js        ← 11 services with pricing
+│   │   ├── barbers.js         ← 2 barber profiles
+│   │   ├── testimonials.js    ← 6 client reviews
+│   │   └── gallery.js         ← Gallery image list
+│   ├── hooks/
+│   │   └── useReveal.js       ← Scroll-reveal intersection observer hook
+│   ├── pages/
+│   │   ├── Home.jsx           ← Landing page
+│   │   ├── Services.jsx       ← Services + filter + floating cart
+│   │   ├── Booking.jsx        ← 5-step booking wizard
+│   │   ├── Gallery.jsx        ← Photo grid + lightbox
+│   │   ├── Contact.jsx        ← Hours, map, contact form
+│   │   └── Admin.jsx          ← Protected admin dashboard
+│   ├── App.jsx                ← Router + AnimatePresence
+│   ├── main.jsx               ← React entry point
+│   └── index.css              ← Tailwind + global styles
+├── vercel.json                ← React Router rewrite rules
+├── vite.config.js
+├── tailwind.config.js
+└── package.json
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js v18 or higher
+- npm or yarn
+
+### Installation
+```bash
+# 1. Clone the repository
+git clone https://github.com/RAJASEKAR-01/Barbar-Shop-Project.git
+
+# 2. Navigate into the project
+cd jeeva-beauty-saloon
+
+# 3. Install dependencies
+npm install
+
+# 4. Create environment file
+cp .env.example .env.local
+# Edit .env.local and set your admin password
+
+# 5. Start the development server
+npm run dev
+```
+
+Open **http://localhost:5173** in your browser.
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env.local` file in the root:
+```env
+VITE_ADMIN_PASSWORD=your_strong_password_here
+```
+
+For **Vercel deployment**, add this in:
+> Vercel Dashboard → Your Project → Settings → Environment Variables
+
+---
+
+## 🔒 Admin Dashboard
+
+| Detail | Value |
+|---|---|
+| URL | `/admin` |
+| Password | Set via `VITE_ADMIN_PASSWORD` env variable |
+| Features | View bookings, update status, revenue stats, WhatsApp customers |
+
+---
+
+## ☁️ Deployment on Vercel
+```bash
+# Build for production
+npm run build
+# Output goes to /dist folder
+```
+
+**Vercel Settings:**
+
+| Setting | Value |
+|---|---|
+| Framework Preset | Vite |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+| Install Command | `npm install` |
+
+> The `vercel.json` file is already configured to handle React Router — no blank page on refresh!
+
+---
+
+## 🎯 What I Learned
+
+- Building multi-step form wizards with complex React state
+- React Context API for global cart and booking management
+- Persisting data with localStorage
+- Deploying React + Vite apps on Vercel with proper routing
+- Securing sensitive data using environment variables
+- Intersection Observer API for scroll-reveal animations
+- Framer Motion for professional page transitions
+- Tailwind CSS custom design system (fonts, colors, spacing)
+
+---
+
+## 👨‍💻 Author
+
+**Rajasekar**  
+🐙 GitHub: [@RAJASEKAR-01](https://github.com/RAJASEKAR-01)  
+💼 LinkedIn: [https://www.linkedin.com/in/rajasekar-developer]
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## ⭐ Support
+
+If you found this project helpful or interesting, please consider giving it a **star ⭐ on GitHub** — it really helps!
+
+---
+
+*Made with ❤️ in Tamil Nadu, India 🇮🇳*
